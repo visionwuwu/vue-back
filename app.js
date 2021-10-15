@@ -3,6 +3,7 @@ const { createServer } = require('http');
 const users = [
   { id: 1, name: 'Visionwuwu', age: 18, sex: '男', cart: '劳斯莱斯' },
   { id: 2, name: 'yan', age: 18, sex: '女', cart: '红旗' },
+  { id: 3, name: 'lisi', age: 18, sex: '女', cart: '宝马' },
 ];
 
 const server = createServer((req, res) => {
