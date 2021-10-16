@@ -9,6 +9,7 @@ const users = [
 
 const server = createServer((req, res) => {
   const { url, method } = req;
+  res.setHeader('Access-Control-Allow-Origin', '*');
   if (method.toUpperCase() === 'GET' && url === '/api/users') {
     const result = JSON.stringify({
       code: 200,
